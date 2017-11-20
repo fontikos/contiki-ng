@@ -35,6 +35,7 @@ CONTIKI_CPU_SOURCEFILES += slip-arch.c slip.c cc26xx-uart.c lpm.c
 CONTIKI_CPU_SOURCEFILES += gpio-interrupt.c gpio-hal-arch.c oscillators.c
 CONTIKI_CPU_SOURCEFILES += rf-core.c rf-ble.c ieee-mode.c
 CONTIKI_CPU_SOURCEFILES += random.c soc-trng.c int-master.c
+CONTIKI_CPU_SOURCEFILES += spi-hal-arch.c
 
 DEBUG_IO_SOURCEFILES += dbg-printf.c dbg-snprintf.c dbg-sprintf.c strformat.c
 
