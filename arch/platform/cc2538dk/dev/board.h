@@ -160,6 +160,18 @@
 #define PLATFORM_HAS_BUTTON     1
 /** @} */
 /*---------------------------------------------------------------------------*/
+#define EXT_FLASH_SPI_CONTROLLER    BOARD_SPI_CONTROLLER_SPI0
+
+#define EXT_FLASH_SPI_PIN_SCK       2 // A2
+#define EXT_FLASH_SPI_PIN_MOSI      4 // A4
+#define EXT_FLASH_SPI_PIN_MISO      5 // A5
+#define EXT_FLASH_SPI_PIN_CS        6 // A6
+
+#define EXT_FLASH_DEVICE_ID         0x14
+#define EXT_FLASH_MID               0xC2
+
+#define EXT_FLASH_PROGRAM_PAGE_SIZE 256
+#define EXT_FLASH_ERASE_SECTOR_SIZE 4096
 /**
  * \name ADC configuration
  *

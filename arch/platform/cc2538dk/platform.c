@@ -63,6 +63,7 @@
 #include "reg.h"
 #include "ieee-addr.h"
 #include "lpm.h"
+#include "ext-flash.h"
 
 #include <stdint.h>
 #include <string.h>
@@ -160,6 +161,9 @@ platform_init_stage_two()
   ieee_addr_cpy_to(linkaddr_node_addr.u8, LINKADDR_SIZE);
 
   INTERRUPTS_ENABLE();
+
+  /* Make sure the external flash is in the lower power mode */
+  ext_flash_init(NULL);
 
   fade(LEDS_GREEN);
 }
